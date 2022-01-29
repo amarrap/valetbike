@@ -1,14 +1,16 @@
 <div class="page-section flexbox vertical stretch">
   <div class="section-inner flexbox vertical stretch">
-    <div class="section-title">
-      Aline wuz here
+    <div class="section-title" style="background-color:#666699">
+      <center style="font-size:69px; color:#003333">
+        aline wuz here
+      </center>
     </div>  
-    <div class="flexbox vertical stretch">
+    <div class="flexbox vertical stretch" style="background-color:#CCCC99">
       <% if @stations.present? %>
         <%= render(partial: "stations/row", collection: @stations, as: :station) %>
       <% else %>
       <div class="empty">
-        asfsadjgfasjgh how do you change stations
+        No stations found :(
       </div>
       <% end %>
     </div>
