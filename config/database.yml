@@ -9,14 +9,14 @@ default: &default
 development:
   <<: *default
   database: valetbike_development
-  username: root
-  password: Aline@2001
+  username: <%= ENV['MYSQL_USERNAME'] || '' %>
+  password: <%= ENV['MYSQL_PASSWORD'] || '' %>
 
 test:
   <<: *default
   database: valetbike_test
-  username: root
-  password: Aline@2001
+  username: <%= ENV['MYSQL_USERNAME'] || '' %>
+  password: <%= ENV['MYSQL_PASSWORD'] || '' %>
 
 production:
   <<: *default
