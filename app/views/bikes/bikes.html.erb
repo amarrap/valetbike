@@ -2,15 +2,15 @@
   <div class="section-inner flexbox vertical stretch">
     <div class="section-title" style="background-color:#92b9f0">
       <center style="font-size:69px; color:#003333">
-        Hello! Welcome to ValetBike :)
+        Bikes:
       </center>
     </div>  
     <div class="flexbox vertical stretch" style="background-color:#CCCC99">
-      <% if @stations.present? %>
-        <%= render(partial: "stations/row", collection: @stations, as: :station) %>
+      <% if @bikes.present? %>
+        <%= render(partial: "bikes/row", collection: @bikes, as: :bike) %>
       <% else %>
       <div class="empty">
-        No stations found :(
+        No bikes found :(
       </div>
       <% end %>
     </div>
